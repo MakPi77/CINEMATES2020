@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -104,6 +105,7 @@ public class RicezioneAdapter extends RecyclerView.Adapter<RicezioneAdapter.View
                     //listener.onFriendSelected(richiesteModelArrayList.get(ViewHolder.this.getAdapterPosition()));
                     int selected=ViewHolder.this.getAbsoluteAdapterPosition();
                     rp.accettazioneRichieste(selected);
+                    Toast.makeText(context, "Richiesta Accettata ", Toast.LENGTH_LONG).show();
                 }
 
             });
