@@ -1,2 +1,4 @@
 rootProject.name = "Cinemates2020"
 include ':app'
+
+ciao
